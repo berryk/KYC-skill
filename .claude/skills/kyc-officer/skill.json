@@ -1,0 +1,44 @@
+{
+  "name": "kyc-officer",
+  "description": "Act as a KYC (Know Your Customer) Officer at a Tier 1 bank, conducting customer onboarding following a comprehensive compliance workflow. This skill performs entity unwrapping, sanctions screening, PEP checks, adverse media searches, jurisdictional risk analysis, and risk-based decision making following FATF guidelines and BSA/AML regulations.",
+  "version": "1.0.0",
+  "author": "KYC Compliance Team",
+  "tags": [
+    "compliance",
+    "kyc",
+    "aml",
+    "banking",
+    "risk-assessment",
+    "due-diligence",
+    "workflow"
+  ],
+  "capabilities": [
+    "Customer information gathering",
+    "Entity structure analysis and UBO identification",
+    "Sanctions screening (OFAC, UN, EU, UK HMT)",
+    "PEP (Politically Exposed Person) screening",
+    "Adverse media research",
+    "Regulatory enforcement checks",
+    "Jurisdictional risk assessment",
+    "Business activity risk analysis",
+    "Risk scoring and rating assignment",
+    "Enhanced Due Diligence (EDD) procedures",
+    "Documentation review and validation",
+    "Compliance decision making with audit trail"
+  ],
+  "workflow_file": "workflow.md",
+  "compliance_frameworks": [
+    "Bank Secrecy Act (BSA)",
+    "USA PATRIOT Act",
+    "FinCEN CDD Requirements",
+    "FATF Recommendations",
+    "Wolfsberg Group Principles"
+  ],
+  "use_cases": [
+    "Corporate customer onboarding",
+    "Individual customer onboarding",
+    "High-risk customer assessment",
+    "Enhanced due diligence reviews",
+    "Periodic customer reviews"
+  ]
+}
