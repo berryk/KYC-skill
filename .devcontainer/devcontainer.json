@@ -1,0 +1,33 @@
+{
+  "name": "KYC-skill workspace",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "features": {
+    // Installs Node.js, npm, yarn, and pnpm
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    },
+    // Installs Python, pip, and standard python tools
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11",
+      "installTools": true
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": "true",
+      "configureZshAsDefaultShell": "true"
+    },
+    "ghcr.io/devcontainers/features/aws-cli:1": {}
+  },
+
+  // FIXED: Added 'ripgrep' here instead of features list
+  "postCreateCommand": "npm install -g @anthropic-ai/claude-code @google/gemini-cli && curl -sS https://starship.rs/install.sh | sh -s -- -y && echo 'eval \"$(starship init zsh)\"' >> ~/.zshrc && echo 'eval \"$(zoxide init zsh)\"' >> ~/.zshrc",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "github.copilot",
+        "eamodio.gitlens"
+      ]
+    }
+  }
+}
